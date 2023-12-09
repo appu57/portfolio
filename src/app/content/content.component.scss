@@ -1,0 +1,324 @@
+.category-card {
+  padding: 16px;
+
+}
+
+.card {
+  max-width: 100%;
+  // border: 1px solid black;
+  padding: 10px;
+  margin: 0px 44px;
+  height: 100%;
+  background-color: transparent;
+  border: transparent;
+
+}
+
+.card-body img {
+  width: 44px;
+  height: 44px;
+  position: relative;
+
+}
+
+.sliding-cards {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.sliding-card {
+  width: 100%;
+  flex: 0 0 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-container {
+  display: flex;
+  width: 100%;
+
+  .card .card-body {
+    background-color: black;
+    margin-top: -10px;
+
+    .name {
+      position: relative;
+      background-color: #202125;
+      margin: -15px;
+      height: 46px;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+    }
+
+  }
+
+}
+
+.slide-button {
+  cursor: pointer;
+}
+
+
+mat-icon {
+  transform: translate(20%, 5px);
+  color: #0000FF;
+}
+
+img {
+  width: 100%;
+  height: 400px;
+}
+
+.card-body {
+  justify-content: center;
+  margin-top: 33px;
+
+  .content-container {
+    display: flex;
+    color: white;
+    width: 100%;
+
+    h4 {
+      padding-left: 10px;
+    }
+  }
+}
+
+
+.left-side {
+  float: left;
+  position: relative;
+}
+
+.right-side {
+  float: right;
+}
+
+h2 {
+  display: flex;
+
+  span {
+    margin-top: 7px;
+    padding-left: 10px;
+  }
+
+}
+
+.profile-icon {
+  background: linear-gradient(45deg, rgb(221, 42, 123), rgb(254, 218, 119), rgb(245, 133, 41));
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 44px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+p,
+h2 {
+  color: white;
+}
+
+.icon-color {
+  display: flex;
+  column-gap: 10px;
+
+  mat-icon {
+    color: rgb(230, 60, 54);
+    width: 50px;
+    font-size: 33px;
+    position: relative;
+    top: -10px;
+    left: 5px;
+  }
+}
+
+
+.content {
+  font-size: 15px;
+  padding: 33px;
+
+}
+
+.blue {
+  color: rgb(56, 130, 214)
+}
+
+.green {
+  color: green;
+}
+
+.inner-content {
+  padding-left: 36px;
+  font-size: 16px;
+
+
+
+}
+
+.datatype {
+  color: rgb(219, 91, 112);
+
+}
+
+.values {
+  color: rgb(10, 184, 88);
+}
+
+.func {
+  color: orange;
+}
+
+.description-content {
+  letter-spacing: 0.04rem;
+
+  .yellow {
+    color: yellow;
+  }
+}
+
+
+.comments {
+  color: rgb(153, 150, 150);
+}
+
+.button-container {
+ position: relative;
+    bottom: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    .right-side{
+       position: relative;
+       left: 33px;
+    }
+
+    .left-side{
+        position: relative;
+        right: 33px;
+    }
+}
+
+.right-content img {
+  width: 45%;
+  height: 360px;
+  padding: 10px;
+}
+
+.inside-func {
+  padding-left: 16px;
+}
+
+.multi-images {
+ display: flex;
+ flex-wrap: wrap;
+ //JA 
+ column-gap: 4px;//JA
+  img {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    margin: 10px;
+    box-shadow: 2px 2px orange;
+  }
+}
+
+
+// .Subex::before{
+//     content: "";
+//     position: absolute;
+//     border: 1px solid rgba(200,137,230,.637);
+//     box-shadow: 0 4px 5px 3px rgba(119,53,136,.459);
+//     // border-image: radial-gradient(rgb(21, 0, 143), rgb(250,224,66)) 1;
+//     height: 330px;
+//     left: 22%;
+//     top:50px;
+//     z-index: 1;
+// }
+
+// .Subex .card-title {
+//   color: rgba(200,137,230,.637);
+//   text-shadow: 2px 2px rgba(119,53,136,.459);
+//   position: absolute;
+//   top: 44px;
+//   letter-spacing: 5px;
+//   left: 25%; 
+
+
+// }
+
+// .Subex .card-title::before{
+//   position: absolute;
+//   content: "";
+//   border: 2px solid rgba(200, 137, 230, 0.637);
+//   border-radius: 50%;
+//   width: 15px;
+//   height: 15px;
+//   left: -44%;
+//   background: beige;
+//   z-index: 20;
+
+// }
+
+// .Subex mat-icon{
+//   position: relative;
+//   top: 10px;
+//   z-index: 20;
+//   color: beige;
+//   z-index: 20;
+// }
+
+
+
+.name-container {
+  display: flex;
+  background-color: #1b191959;
+  padding: 10px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+
+.border-container {
+  background-color: rgb(78, 219, 78);
+  padding: 10px;
+  margin-right: 10px;
+  color: white;
+  width: 33px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+
+
+@media (max-width:900px) {
+
+
+  .right-content img {
+    width: 100%;
+  }
+
+  .multi-images {
+    display: flex;
+    flex-wrap: wrap;
+    //JA 
+    column-gap: 10px;//JA
+     img {
+       width: 100px;
+       height: 100px;
+       background-color: gray;
+       margin: 10px;
+     }
+   }
+
+}

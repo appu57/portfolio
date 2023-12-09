@@ -1,0 +1,13 @@
+<!-- <div class="button-wrapper">
+    <button class="slide-button slide-left">&#10094;</button>
+    <button class="slide-button slide-right">&#10095;</button>
+</div>
+
+document.querySelectorAll('.slide-button').forEach((button, index) => {
+    button.addEventListener('click', (event) => {
+      if (event.currentTarget.classList.contains('slide-left')) {
+        slideLeft(index);
+      } else if (event.currentTarget.classList.contains('slide-right')) {
+        slideRight(index);
+      }
+}); -->

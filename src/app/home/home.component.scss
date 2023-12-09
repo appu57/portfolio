@@ -1,0 +1,242 @@
+ .header .first-row {
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 2px 2px #575353;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    --tw-bg-opacity: 1;
+    background-color: rgba(52, 53, 65, var(--tw-bg-opacity));
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 24px;
+
+    button{
+        border-width: 0;
+    }
+
+    mat-icon{
+        color: white;
+    }
+
+    
+
+
+}
+
+.header .right-float {
+    position: absolute;
+    right: 47px;
+}
+
+.header .right-float mat-icon {
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+
+}
+
+.left-float{
+    position: relative;
+    top: 5px;
+    left: 36%;
+    h4{
+        position: relative;
+        left: -36%;
+    }
+}
+
+h4 {
+    font: 800 15px / 24px Roboto, "Helvetica Neue", sans-serif;
+    letter-spacing: normal;
+    margin: 0 10px 16px;
+    font-style: italic;
+    font-family: ui-sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+.second-inner-first-row {
+    display: flex;
+    margin: 10px 18px -13px;
+    justify-content: space-between;
+    border: 1px solid rgb(51, 47, 47);
+    box-shadow: 1px 2px 2px 0 rgb(34, 32, 32);
+    background-color: black;
+    height: auto;
+    width: 95%;
+    padding-top: 10px;
+    overflow-x: auto; //scroll behaviour appears on window width 
+}
+
+
+.second-inner-first-row::-webkit-scrollbar {
+    width: 0px; //setting width to 0 hides the scroll bar
+}
+
+.second-inner-first-row .circle {
+    width: 50px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 50px;
+    margin: 0px 100px 0 0;
+    cursor: pointer;
+    background: linear-gradient(45deg, rgb(81, 91, 212), rgb(129, 52, 175), rgb(221, 42, 123), rgb(254, 218, 119));
+    color: white;
+}
+
+.icon-about p {
+    color: white;
+
+}
+
+
+.footer-panel {
+    display: none;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-hyperlink {
+    color: black;
+
+}
+
+.content {
+    padding: 10px;
+    width: 100%;
+}
+
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    flex-wrap: nowrap;
+    --tw-bg-opacity: 1;
+    background-color:rgba(68,70,84,var(--tw-bg-opacity));
+    margin: 0 !important;
+
+    .side-nav {
+        width: 25%;
+    }
+
+    .second-row {
+        width: 64%;
+    }
+}
+
+.side-nav .side-nav-tab {
+    background-color: black;
+    margin: 15px 0px 0px 0px;
+    position: fixed;
+    height: 100%;
+    width: 25%;
+    border: 1px solid rgb(75, 68, 68);
+    padding: 10px
+}
+
+
+::ng-deep .mat-dialog-container {
+    overflow: hidden !important;
+    padding: 0 !important;
+    // border-radius: 50px !important ;
+    width: 100% !important;
+
+}
+
+mat-sidenav {
+    --tw-bg-opacity: 1;
+    background-color: rgba(32, 33, 35, var(--tw-bg-opacity));
+    height: 100vh !important;
+    width: 330px !important;
+    z-index: 4;
+    position: fixed;
+
+
+}
+
+.mat-drawer-container {
+    overflow: visible !important;
+}
+
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+    position: sticky;
+    padding: 0;
+    top: 0;
+    z-index: 7;
+}
+
+@media (max-width:1300px) {
+
+    .side-nav {
+        width: 33%;
+
+        .side-nav-tab {
+            width: 30%;
+        }
+    }
+
+    .row .second-row {
+        padding: 2px;
+        margin-top: 25px;
+        margin-right: 25px;
+        width: 65%;
+        float: right;
+    }
+}
+
+@media (max-width: 898px) {
+    .footer-panel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        z-index: 1;
+        bottom: 1px;
+        width: 100%;
+        background-color: black;
+
+    }
+
+    .content {
+        padding: 10px;
+        width: 100%;
+        float: none;
+    }
+
+    .row .second-row {
+        padding: 2px;
+        padding-left: 10px;
+        width: 100%;
+        float: none;
+    }
+
+    .side-nav {
+        display: none;
+
+    }
+
+    .header .first-row {
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        
+    }
+
+    .row{
+        padding-top: 75px;
+    }
+
+
+
+}

@@ -1,0 +1,27 @@
+<!-- <mat-toolbar>
+    
+    </mat-toolbar> -->
+<mat-sidenav-container autosize>
+    <mat-sidenav #sidenavbar [opened]="openValue" [mode]="modeValue">
+        <app-explore (closeNav)="sidenavbar.close()"></app-explore>
+    </mat-sidenav>
+
+        <div class="header">
+            <div class="first-row">
+                <button mat-icon-button class="btn" aria-label="Menu icon" (click)="sidenavbar.toggle()">
+                    <mat-icon (click)="rotateIcon()" id="icon">arrow_back</mat-icon>
+                </button>
+                <div class="left-float">
+                    <h4>Apoorva C E , Software Engineer</h4>
+                </div>
+                <div class="right-float">
+                    <a (click)="openContactPage()"><mat-icon class="header-hyperlink">send</mat-icon></a>
+                </div>
+            </div>
+            <div class="row">
+                <app-content class="content"></app-content>
+            </div>
+
+
+        </div>
+</mat-sidenav-container>

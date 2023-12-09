@@ -1,0 +1,231 @@
+<div *ngFor="let category of cardObjects; let i=index">
+    <div class="category-card" (touchstart)="onTouchStart($event, i)" (touchmove)="onTouchMove($event, i)"
+        (touchend)="onTouchEnd($event, i)">
+        <div class="card-header">
+            <div class="name-container">
+                <span class="border-container">AP</span>
+                <h2>{{category.name}}</h2>
+            </div>
+            <!-- <h2><mat-icon class="profile-icon">{{category.icon}}</mat-icon> &nbsp;<span class="categoryname">{{category.name }}<mat-icon>verified</mat-icon></span></h2> -->
+        </div>
+        <div class="card-body">
+            <div class="content-container">
+                <img src="../../assets/images/chatgpt-icon.svg">
+                <h4> {{category.description}}</h4>
+            </div>
+            <br>
+            <div class="sliding-cards">
+                <div class="card-container">
+                    <div *ngFor="let item of category.category" class="sliding-card">
+                        <div class="card" *ngIf="i==0">
+                            <div class="card-body">
+                                <div class="name">{{category.name}}</div>
+                                <div class="content">
+                                    <p class="export-class"><span class="blue">interface</span> <span class="green">
+                                            Apoorva_CE </span>&nbsp;<span class="bracket">&#123;</span> </p>
+                                    <div class="inner-content">
+                                        <div class="inner-func">
+                                            <p class="card-title">
+                                                <span class="variables">name</span>&nbsp;<span>:</span>&nbsp;<span
+                                                    class="datatype">string</span>&nbsp;<span>=</span>
+                                                &nbsp;<span class="values">{{item.name }}</span>&nbsp;<span>;</span>
+                                            </p>
+                                            <p class="card-title">
+                                                <span class="variables">age</span>&nbsp;<span>:</span>&nbsp;<span
+                                                    class="datatype">number</span>&nbsp;<span>=</span>
+                                                &nbsp;<span class="values">{{item.percentage
+                                                    }}</span>&nbsp;<span>;</span>
+                                            </p>
+                                            <p class="card-title">
+                                                <span
+                                                    class="variables">highest_Qualification</span>&nbsp;<span>:</span>&nbsp;<span
+                                                    class="datatype">string</span>&nbsp;<span>=</span>
+                                                &nbsp;<span class="values">{{item.universityName
+                                                    }}</span>&nbsp;<span>;</span>
+                                            </p>
+                                            <p class="card-title">
+                                                <span class="variables">hobbies</span>&nbsp;<span>:</span>&nbsp;<span
+                                                    class="datatype">string</span>&nbsp;<span>=</span>
+                                                &nbsp;<span class="values">{{item.specialization
+                                                    }}</span>&nbsp;<span>;</span>
+                                            </p>
+                                            <p class="card-title">
+                                                <span class="variables">languages</span>&nbsp;<span>:</span>&nbsp;<span
+                                                    class="datatype">string</span>&nbsp;<span>=</span>
+                                                &nbsp;<span class="values">{{item.description
+                                                    }}</span>&nbsp;<span>;</span>
+                                            </p>
+                                            <p class="card-title">
+                                                <span class="variables">Role</span>&nbsp;<span>:</span>&nbsp;<span
+                                                    class="datatype">string</span>&nbsp;<span>=</span>
+                                                &nbsp;<span class="values">{{item.year }}</span>&nbsp;<span>;</span>
+                                            </p>
+                                            <p class="func">setCategoryWiseDescription ( ) :void ;</p>
+                                        </div>
+                                    </div>
+                                    <p><span class="bracket">&#125;</span></p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" *ngIf="i>0">
+                            <div class="card-body">
+                                <div class="name">{{category.name}}</div>
+                                <div class="content">
+                                    <p class="export-class"><span class="blue">export class</span> <span class="green">
+                                            {{category.name}} </span>&nbsp;<span
+                                            class="blue">implements</span>&nbsp;<span class="datatype">Apoorva_CE</span>
+                                        &nbsp;<span class="bracket">&#123;</span> </p>
+
+                                    <div class="inner-content">
+                                        <div class="show-container" *ngIf="i!=4">
+
+                                            <p class="card-title">
+                                                <span
+                                                    class="variables">company_name</span>&nbsp;<span>:</span>&nbsp;<span
+                                                    class="datatype">string</span>&nbsp;<span>=</span>
+                                                &nbsp;<span class="values">{{item.name }}</span>&nbsp;<span>;</span>
+                                            </p>
+                                            <p class="card-text" *ngIf="item.percentage">
+                                                <span class="variables">percentage</span>&nbsp;<span>:</span>&nbsp;<span
+                                                    class="datatype">number</span>&nbsp;<span>=</span>
+                                                &nbsp; <span class="values">{{ item.percentage}}</span>&nbsp;
+                                                <span>;</span>
+                                            </p>
+                                            <p class="card-text" *ngIf="item.universityName">
+                                                <span
+                                                    class="variables">universityName</span>&nbsp;<span>:</span>&nbsp;<span
+                                                    class="datatype">string</span>&nbsp;<span>=</span>
+                                                &nbsp;<span class="values"> {{ item.universityName }}</span>&nbsp;
+                                                <span>;</span>
+                                            </p>
+                                            <p class="card-text" *ngIf="item.specialization">
+                                                <span
+                                                    class="variables">specialization</span>&nbsp;<span>:</span>&nbsp;<span
+                                                    class="datatype">string</span>&nbsp;<span>=</span>
+                                                &nbsp; <span class="values">{{ item.specialization
+                                                    }}</span>&nbsp;<span>;</span>
+                                            </p>
+                                            <p class="card-text"
+                                                *ngIf="item.description && category.name != 'Education'">
+                                                <span
+                                                    class="variables">designation</span>&nbsp;<span>:</span>&nbsp;<span
+                                                    class="datatype">string</span>&nbsp;<span>=</span>
+                                                &nbsp;<span class="values">{{item.description }}</span>&nbsp;
+                                                <span>;</span>
+                                            </p>
+                                            <p class="card-text" *ngIf="item.year">
+                                                <span class="variables">year</span>&nbsp;<span>:</span>&nbsp;<span
+                                                    class="datatype">string</span>&nbsp;<span>=</span>
+                                                &nbsp;<span class="values">
+                                                    {{item.year }}</span>&nbsp; <span>;</span>
+                                            </p><br>
+                                        </div>
+
+                                        <div class="description-content" *ngIf="item.tasks">
+
+                                            <p><span class="func">setCategoryWiseDescription
+                                                    &nbsp;</span>( )<span class="funcName"></span> &nbsp;<span
+                                                    class="bracket">&#123;</span></p>
+                                            <div class="inside-func">
+
+                                                <p><span class="blue">let</span> tech_stack = <span
+                                                        class="datatype">document.getElementById </span>( '
+                                                    skills-used
+                                                    ' )
+                                                    ;
+                                                </p>
+                                                <p>tech_stack.innerHTML = <span class="values">"
+                                                        &nbsp;{{item.tasks.skills}} &nbsp; " </span>
+                                                    <span class="comments">// Specifies the technology stack that
+                                                        was being used
+                                                    </span>
+                                                </p>
+                                                <p><span class="blue">let</span> tasks_performed = <span
+                                                        class="datatype">document.getElementById </span>(
+                                                    'achievments '
+                                                    )
+                                                    ;
+                                                </p>
+                                                <p><span class="blue">const</span> tasks = &#123;</p>
+                                                <ul *ngFor="let task of item.tasks.description , let i=index">
+                                                    <span class="datatype">task_{{i+1}} :</span> &nbsp; <span
+                                                        class="values">{{task.task1}}</span>
+                                                </ul>
+                                                <p>&#125;</p>
+
+                                                <p>tasks_performed.innerHTML = tasks ;
+                                                </p>
+                                            </div>
+                                            <p><span class="bracket">&#125;</span></p>
+
+                                        </div>
+                                        <div class="right-content" *ngIf="category.name =='Education'">
+                                            <p><span class="func">setCategoryWiseDescription</span> ( ) &#123; </p>
+                                            <div class="inside-func" *ngIf="item.description ;else notImplemented">
+                                                <p><span class="blue">let</span> achievments = <span
+                                                        class="datatype">document.getElementById </span>( '
+                                                    achievments
+                                                    ' )
+                                                    ;
+                                                </p>
+                                                <p>achievments.innerHTML = <span
+                                                        class="datatype">{{item.description}}</span>
+                                                    ;</p>
+
+
+                                            </div>
+                                            <ng-template #notImplemented>
+                                                <p class="inside-func">Method Not Implemented('');</p>
+                                            </ng-template>
+
+                                            <p><span class="bracket">&#125;</span></p>
+
+                                        </div>
+                                        <div class="right-content" *ngIf="item.images ">
+                                            <p><span class="func">setCategoryWiseDescription</span> ( ) &#123; </p>
+                                            <div class="inside-func">
+                                                <p><span class="blue">let</span> view_image = <span
+                                                        class="datatype">document.getElementById </span>( '
+                                                    view_image
+                                                    ' )
+                                                    ;
+                                                </p>
+                                                <p>view_image.width='450px' ;</p>
+                                                <p>view_image.height='450px' ;</p>
+
+                                            </div>
+                                            <div class="single-images" *ngIf="i!=4">
+                                                <img [src]="'assets/images/'+item.images"><br>
+                                            </div>
+                                            <div class="multi-images" *ngIf="i==4">
+                                                <div *ngFor="let skill of category.category[0].images.split(','); let i = index">
+                                                    <img [src]="'assets/images/' + skill.trim()" alt="Skill Image {{i + 1}}" />
+                                                </div>
+                                            </div>
+                                            <p><span class="bracket">&#125;</span></p>
+
+                                        </div>
+
+                                    </div>
+                                    <p><span class="bracket">&#125;</span></p>
+
+                                </div>
+
+
+                            </div>
+                            <div class="button-container" *ngIf="category.category.length>1">
+
+                                <div class="slide-button left-side" (click)="slideLeft(i)">&#10094;&#10094;</div>
+                                <div class="slide-button right-side" (click)="slideRight(i)">&#10095;&#10095;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        
+
+        </div>
+    </div>
+</div>
