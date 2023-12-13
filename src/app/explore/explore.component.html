@@ -6,7 +6,7 @@
     </div>
     <h5>Navigation</h5>
     <div class="navigation-row" *ngFor="let element of cardObjects">
-        <div class="category-container"  [ngClass]="{ 'selected': selectedElement === element.name }" (click)="setResolution(element.name)">
+        <div class="category-container" [ngClass]="{ 'selected': selectedElement === element.name }" (click)="setResolution(element.name)">
             <div class="icon">
                 <mat-icon>{{element.icon}}</mat-icon>
             </div>
