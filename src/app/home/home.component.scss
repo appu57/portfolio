@@ -145,13 +145,13 @@ a {
 }
 
 
-::ng-deep .mat-dialog-container {
-    overflow: hidden !important;
-    padding: 0 !important;
-    // border-radius: 50px !important ;
-    width: 100% !important;
+// ::ng-deep .mat-dialog-container {
+//     overflow: hidden !important;
+//     padding: 0 !important;
+//     // border-radius: 50px !important ;
+//     width: 100% !important;
 
-}
+// }
 
 mat-sidenav {
     --tw-bg-opacity: 1;
@@ -164,17 +164,17 @@ mat-sidenav {
 
 }
 
-.mat-drawer-container {
-    overflow: visible !important;
-}
+// .mat-drawer-container {
+//     overflow: visible !important;
+// }
 
-.mat-toolbar-row,
-.mat-toolbar-single-row {
-    position: sticky;
-    padding: 0;
-    top: 0;
-    z-index: 7;
-}
+// .mat-toolbar-row,
+// .mat-toolbar-single-row {
+//     position: sticky;
+//     padding: 0;
+//     top: 0;
+//     z-index: 7;
+// }
 
 @media (max-width:1300px) {
 
