@@ -6,10 +6,10 @@ const arrayOfObjects = [
     category: [
       {
         name: 'Apoorva CE',
-        percentage: 22,
-        universityName:'BE',
+        percentage: 23,
+        universityName:'BE in Computer Science',
         description: 'English , Kannada, Hindi' ,
-        year: '"Software Engineer , MEAN stack developer , UI Designer , Backend Developer"',
+        year: 'Software Engineer , MEAN stack developer , UI developer , Backend Developer',
         images: null,
         specialization: 'Dance , Singing , Cooking ',
         tasks:null
@@ -21,14 +21,14 @@ const arrayOfObjects = [
   {
     name: 'Experience',
     icon: 'work',
-    description:'Sure , here is your experience summary',
+    description:'Sure , here is Apoorva\'s experience summary',
     category: [
       {
         name: 'Subex',
         percentage: null,
         universityName:null,
-        description: '" SDE Intern , Software Engineer " ' ,
-        year: "02-02-2023 to 01-Aug-2023(Intership) , 02-Aug-2023-Present ",
+        description: ' SDE Intern , Software Engineer  ' ,
+        year: "02-02-2023 to 01-Aug-2023(Intership) , 02-Aug-2023-Present (Full-time)",
         images: null,
         specialization: '',
         tasks:{
@@ -55,7 +55,7 @@ const arrayOfObjects = [
   {
     name: 'Education',
     icon: 'school',
-    description:'It seems like you want to know your qualification. Here is the updated Qualification',
+    description:'It seems like you want to know Apoorva\'s qualification. Here is the updated Qualification',
     category: [
       {
         name: 'SSLC',
@@ -95,7 +95,7 @@ const arrayOfObjects = [
   {
     name: 'Certification',
     icon: 'star',
-    description:'Certainly , Here is the name of the courses certified to you',
+    description:'Certainly , Here is the name of the courses certified to Apoorva CE , tap the left to know more',
     category: [
       {
         name: ' Front-End Javascript Frameworks-Angular',
@@ -146,7 +146,7 @@ const arrayOfObjects = [
   {
     name: 'Skills',
     icon: 'code',
-    description:'To achieve the knowledge and skills that you have gained , below libraries ,framework , programming langauge , database were the tools',
+    description:'To achieve the knowledge and skills that Apoorva CE have gained , below libraries/framework/programming langauge/database were the tools',
     category: [
       {
         name: 'Angular',
@@ -163,57 +163,58 @@ const arrayOfObjects = [
   {
     name: 'Projects',
     icon: 'folder',
-    description:'Certainly , you can swipe left to know the details of personal project',
+    description:'Certainly , you can find below the list of projects and its summary',
     category: [
-      {
-        name: 'Weather App',
-        percentage: null,
-        universityName:null,
-        description: null,
-        year: null,
-        images: null,
-        specialization: null,
-        tasks:
-        {
-          skills:'Angular',
-          description:[
-            {
-              task1:'A basic Weather application that uses openweathermap.org as a rest api to fetch real-time data',
-            },
-            {
-              task1:'Extensive use @Output and @Input decorator to enable component level communication also using two-way data binding [(ngModel)] to enable DOM communication',
-            }
-          ]
-        }
+      
+      // {
+      //   name: 'Weather App',
+      //   percentage: null,
+      //   universityName:null,
+      //   description: null,
+      //   year: null,
+      //   images: null,
+      //   specialization: null,
+      //   tasks:
+      //   {
+      //     skills:'Angular',
+      //     description:[
+      //       {
+      //         task1:'A basic Weather application that uses openweathermap.org as a rest api to fetch real-time data',
+      //       },
+      //       {
+      //         task1:'Extensive use @Output and @Input decorator to enable component level communication also using two-way data binding [(ngModel)] to enable DOM communication',
+      //       }
+      //     ]
+      //   }
 
 
-      },
-      {
-        name: 'E-commerce Website',
-        percentage: null,
-        universityName: null,
-        description: null,
-        year: null,
-        images: null,
-        specialization: 'MEAN stack application',
-        tasks:
-        {
-          skills:'MongoDB , Angular , NodeJS , ExpressJS',
-          description:[
-            {
-              task1:'Enabled JWT authentication for login and signup page , that authorizes a user each time there is a signup/login using token generated',
-            },
-            {
-              task1:'Use of Angular AuthGuards that restricted the login/navigation of user to admin respective pages',
-            },
-            {
-              task1:'Supported the CRUD operations which involed creation , modification and deletion of the grocery products',
-            },
-          ]
-        }
+      // },
+      // {
+      //   name: 'E-commerce Website',
+      //   percentage: null,
+      //   universityName: null,
+      //   description: null,
+      //   year: null,
+      //   images: null,
+      //   specialization: 'MEAN stack application',
+      //   tasks:
+      //   {
+      //     skills:'MongoDB , Angular , NodeJS , ExpressJS',
+      //     description:[
+      //       {
+      //         task1:'Enabled JWT authentication for login and signup page , that authorizes a user each time there is a signup/login using token generated',
+      //       },
+      //       {
+      //         task1:'Use of Angular AuthGuards that restricted the login/navigation of user to admin respective pages',
+      //       },
+      //       {
+      //         task1:'Supported the CRUD operations which involed creation , modification and deletion of the grocery products',
+      //       },
+      //     ]
+      //   }
 
 
-      },
+      // },
 
     ],
   }

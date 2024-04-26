@@ -17,7 +17,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSidenavModule} from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import { MatToolbarModule } from '@angular/material/toolbar'
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { ProjectsComponent } from './projects/projects.component'
 
 
 
@@ -29,6 +30,7 @@ import { MatToolbarModule } from '@angular/material/toolbar'
     AboutComponent,
     ExploreComponent,
     CommunicateComponent,
+    ProjectsComponent,
     
   ],
   imports: [

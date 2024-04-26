@@ -33,6 +33,7 @@ export class ContentComponent implements OnInit {
   cardObjects: Category[] = arrayOfObjects;
   private activeCardIndices: number[] = [];
   heading: string;
+  length : number = this.cardObjects.length-1;
 
   private startX = 0;
 

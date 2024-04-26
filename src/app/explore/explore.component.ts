@@ -26,26 +26,27 @@ export class ExploreComponent implements OnInit {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    if (!this.buttonclicked) {
-      const y_axis = window.scrollY;
-      if (y_axis < 650) {
+    const y_axis = window.scrollY;
+    if (this.buttonclicked == false) {
+      if (y_axis < 900) {
         this.selectedElement = 'About Me';
       }
-      else if (y_axis >= 650 && y_axis < 1500) {
+      else if (y_axis >= 900 && y_axis < 1800) {
         this.selectedElement = 'Experience';
       }
-      else if (y_axis >= 1500 && y_axis < 2250) {
+      else if (y_axis >= 1800 && y_axis < 2900) {
         this.selectedElement = 'Education';
       }
-      else if (y_axis >= 2280 && y_axis < 3000) {
+      else if (y_axis >= 2900 && y_axis < 3400) {
         this.selectedElement = 'Certification';
       }
-      else if (y_axis >= 3000 && y_axis < 3300) {
+      else if (y_axis >= 3400 && y_axis < 4500) {
         this.selectedElement = 'Skills';
       }
       else if (y_axis >= window.screenY) {
         this.selectedElement = 'Projects';
       }
+
     }
 
   }
@@ -70,19 +71,19 @@ export class ExploreComponent implements OnInit {
     this.selectedElement = value;
     switch (value) {
       case 'Experience':
-        window.scrollTo(window.pageXOffset, 700);
+        window.scrollTo(window.pageXOffset, 900);
         break;
       case 'Education':
-        window.scrollTo(window.pageXOffset, 1500);
+        window.scrollTo(window.pageXOffset, 2000);
         break;
       case 'Certification':
-        window.scrollTo(window.pageXOffset, 2280);
+        window.scrollTo(window.pageXOffset, 2940);
         break;
       case 'Skills':
-        window.scrollTo(window.pageXOffset, 3300);
+        window.scrollTo(window.pageXOffset, 4040);
         break;
       case 'Projects':
-        window.scrollTo(window.pageXOffset, 4300);
+        window.scrollTo(window.pageXOffset, 4900);
         break;
       default:
         window.scrollTo(0, 0);
