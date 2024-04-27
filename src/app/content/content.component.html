@@ -22,50 +22,62 @@
                     <div *ngFor="let item of category.category" class="sliding-card">
                         <div class="card" *ngIf="i==0">
                             <div class="card-body">
-                                <div class="name">{{category.name}}</div>
+                                <div class="name">
+                                    <p class="category-name">{{category.name}}</p>
+                                </div>
                                 <div class="content">
                                     <p class="export-class"><span class="blue">interface</span> <span
                                             class="green main-content">
                                             Apoorva C E </span>&nbsp;<span class="bracket">&#123;</span> </p>
                                     <div class="inner-content">
                                         <div class="inner-func">
-                                            <p class="card-title">
+                                            <p class="card-content">
                                                 <span class="variables">name</span>&nbsp;<span>:</span>&nbsp;<span
                                                     class="datatype">string</span>&nbsp;
                                                 &nbsp;<span class="values  main-content">{{item.name }}</span>&nbsp;
                                             </p>
-                                            <p class="card-title">
+                                            <p class="card-content">
                                                 <span class="variables">age</span>&nbsp;<span>:</span>&nbsp;<span
                                                     class="datatype">number</span>&nbsp;
                                                 &nbsp;<span class="values  main-content">{{item.percentage
                                                     }}</span>&nbsp;
                                             </p>
-                                            <p class="card-title">
+                                            <p class="card-content">
                                                 <span
                                                     class="variables">highest_Qualification</span>&nbsp;<span>:</span>&nbsp;<span
                                                     class="datatype">string</span>&nbsp;
                                                 &nbsp;<span class="values  main-content">{{item.universityName
                                                     }} <span> (2019-2023) </span></span>&nbsp;
                                             </p>
-                                            <p class="card-title">
+                                            <p class="card-content">
                                                 <span
                                                     class="variables">skills</span>&nbsp;<span>:</span>&nbsp;<span
                                                     class="datatype">string</span>&nbsp;
-                                                &nbsp;<span class="values  main-content"> Angular , JavaScript, Java , SpringBoot , NodeJS , ExpressJS , MongoDB , SQL , Typescript , Postgres , HTML & CSS , WebSocket , SocketIO, React , SpringBatch ,  </span>&nbsp;
+                                                &nbsp;<span class="values  main-content"> Angular , JavaScript, Java , SpringBoot , NodeJS , ExpressJS , MongoDB , SQL , Typescript , Postgres , HTML & CSS , WebSocket , SocketIO, React , SpringBatch </span>&nbsp;
                                             </p>
-                                            <p class="card-title">
+                                            <p class="card-content">
+                                                <span class="variables">personal_projects</span>&nbsp;<span>:</span>&nbsp;<span
+                                                    class="datatype">string</span>&nbsp;
+                                                &nbsp;<span class="values  main-content">20+</span>&nbsp;
+                                            </p>
+                                            <p class="card-content">
+                                                <span class="variables">corporate_projects</span>&nbsp;<span>:</span>&nbsp;<span
+                                                    class="datatype">string</span>&nbsp;
+                                                &nbsp;<span class="values  main-content">9+ (UI , backend)</span>&nbsp;
+                                            </p>
+                                            <p class="card-content">
                                                 <span class="variables">hobbies</span>&nbsp;<span>:</span>&nbsp;<span
                                                     class="datatype">string</span>&nbsp;
                                                 &nbsp;<span class="values  main-content">{{item.specialization
                                                     }}</span>&nbsp;
                                             </p>
-                                            <p class="card-title">
+                                            <p class="card-content">
                                                 <span class="variables">languages</span>&nbsp;<span>:</span>&nbsp;<span
                                                     class="datatype">string</span>&nbsp;
                                                 &nbsp;<span class="values  main-content">{{item.description
                                                     }}</span>&nbsp;
                                             </p>
-                                            <p class="card-title">
+                                            <p class="card-content">
                                                 <span class="variables">designation</span>&nbsp;<span>:</span>&nbsp;<span
                                                     class="datatype">string</span>&nbsp;
                                                 &nbsp;<span class="values">{{item.year }}</span>&nbsp;
@@ -82,7 +94,7 @@
                         <div class="card" *ngIf="i>0">
                             <div class="card-body">
                                 <div class="name">
-                                    <div class="category-name">{{category.name}}</div>
+                                    <p class="category-name">{{category.name}}</p>
                                     <!-- <div class="love-it"><mat-icon>favorite</mat-icon> </div> -->
                                 </div>
                                 <div class="content">
@@ -95,7 +107,7 @@
                                     <div class="inner-content">
                                         <div class="show-container" *ngIf="i!=4">
 
-                                            <p class="card-title">
+                                            <p class="card-content">
                                                 <span class="variables">{{category.name == "Experience" ? "company_name"
                                                     : "category name"}}</span>&nbsp;<span>:</span>&nbsp;<span
                                                     class="datatype">string</span>&nbsp;
@@ -148,7 +160,7 @@
                                             <div class="inside-func">
 
                                                 <p><span class="blue">let</span> tech_stack = <span
-                                                        class="datatype">document.getElementById </span>( '
+                                                        class="pink-display">document.getElementById </span>( '
                                                     skills-used
                                                     ' )
                                                     ;
@@ -160,7 +172,7 @@
                                                     </span>
                                                 </p>
                                                 <p><span class="blue">let</span> tasks_performed = <span
-                                                        class="datatype">document.getElementById </span>(
+                                                        class="pink-display">document.getElementById </span>(
                                                     'achievments '
                                                     )
                                                     ;
@@ -182,7 +194,7 @@
                                             <p><span class="func">setCategoryWiseDescription</span> ( ) &#123; </p>
                                             <div class="inside-func" *ngIf="item.description ;else notImplemented">
                                                 <p><span class="blue">let</span> achievments = <span
-                                                        class="datatype">document.getElementById </span>( '
+                                                        class="pink-display">document.getElementById </span>( '
                                                     achievments
                                                     ' )
                                                     ;
@@ -203,7 +215,7 @@
                                             <p><span class="func">setCategoryWiseDescription</span> ( ) &#123; </p>
                                             <div class="inside-func">
                                                 <p><span class="blue">let</span> view_image = <span
-                                                        class="datatype">document.getElementById </span>( '
+                                                        class="pink-display">document.getElementById </span>( '
                                                     view_image
                                                     ' )
                                                     ;
@@ -215,12 +227,8 @@
                                             <div class="single-images" *ngIf="i!=4">
                                                 <img [src]="'assets/images/'+item.images"><br>
                                             </div>
-                                            <div class="multi-images" *ngIf="i == length-1">
-                                                <div
-                                                    *ngFor="let skill of category.category[0].images.split(','); let i = index">
-                                                    <img [src]="'assets/images/' + skill.trim()"
-                                                        alt="Skill Image {{i + 1}}" />
-                                                </div>
+                                            <div *ngIf="i == length-1">
+                                                <app-about></app-about>
                                             </div>
                                             <p><span class="bracket">&#125;</span></p>
 

@@ -11,7 +11,7 @@ const arrayOfObjects = [
         description: 'English , Kannada, Hindi' ,
         year: 'Software Engineer , MEAN stack developer , UI developer , Backend Developer',
         images: null,
-        specialization: 'Dance , Singing , Cooking ',
+        specialization: 'Dancing , Singing , Cooking ',
         tasks:null
 
       }
@@ -36,13 +36,19 @@ const arrayOfObjects = [
           skills:'Angular , Spring Boot , SpringBatch ,Apache NIFI ,SQL , PostgreSQL',
           description:[
             {
-              task1:'Part of an agile team responsible for the developement of solution for the data quality checks using scalable Next Generation platform Apache Nifi.',
+              task1:'Developed a fully functional alerts UI page, which was incorporated all over the hypersense product , ensuring an effective communication of the alerts. Additionally , over a period was widely used by various clients and customers all over the SUBEX as a medium of client-server communication to indicate any discrepancy',
+            },
+            {
+              task1:'Successfully resolved 10+ legacy user-interface bugs which improved the user-experience by 20%, resulting in the early accomplishment of a lead UI developer of a PLATFORM team',
+            },
+            {
+              task1:'Assumed the position of sole junior UI developer in a team of senior developers leveraging and mentoring the web performance metrics. Part of an agile team responsible for the developement of solution for the data quality checks using scalable Next Generation platform Apache Nifi.',
             },
             {
               task1:'Extensively worked with Spring Batch in developing readers which involved handling diverse CSV and ascii files.',
             },
             {
-              task1:'Worked in the core module of Hypersense product team as a prominent full stack developer by leveraging a well efficient UI design and part of backend developement'
+              task1:'Fulfilled the role of a backend developer efficiently optimizing the performance of data retrieval from various tables residing in various DB.Additionally played a key role in elevating code quality by increasing test coverage to 90%'
             },
             
           ]
@@ -57,13 +63,14 @@ const arrayOfObjects = [
     icon: 'school',
     description:'It seems like you want to know Apoorva\'s qualification. Here is the updated Qualification',
     category: [
+
       {
-        name: 'SSLC',
-        percentage: 98.72,
-        universityName: 'St.Sophia Convent High School',
-        specialization: 'SSLC',
-        description: 'State 9th topper for the year 2017',
-        year: "2017",
+        name: 'BE',
+        percentage: 8.45,
+        universityName: 'SJB Institute of Technology',
+        specialization: 'Computer Science and Engineering',
+        description: null,
+        year: "19-2023",
         images: null,
         tasks:null
 
@@ -80,12 +87,12 @@ const arrayOfObjects = [
 
       },
       {
-        name: 'BE',
-        percentage: 8.45,
-        universityName: 'SJB Institute of Technology',
-        specialization: 'Computer Science and Engineering',
-        description: null,
-        year: "19-2023",
+        name: 'SSLC',
+        percentage: 98.72,
+        universityName: 'St.Sophia Convent High School',
+        specialization: 'SSLC',
+        description: 'State 9th topper for the year 2017',
+        year: "2017",
         images: null,
         tasks:null
 

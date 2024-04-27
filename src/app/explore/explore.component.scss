@@ -20,7 +20,7 @@
 
     .name-container{
         display: flex;
-        margin: 17px;
+        margin: 0px 12px;
     }
 
     h2 {
@@ -44,7 +44,7 @@
 
 .category-container{
     display:flex;
-    padding: 20px 0 20px 20px;
+    padding: 9px 0 20px 20px;
     color: white;
     cursor: pointer;
 
@@ -82,4 +82,16 @@ h5{
 a{
     text-decoration: none;
     color: white;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
 }
