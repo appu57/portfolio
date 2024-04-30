@@ -28,8 +28,7 @@
 h2 {
     color: white;
     color: white;
-    font-size: 24px;
-    font-style: italic;
+    
 }
 
 .card {
@@ -72,7 +71,7 @@ h2 {
     .name {
         position: relative;
         background-color: #202125;
-        margin: -16px;
+        margin: -18px;
         height: 46px;
         color: white;
         display: flex;
@@ -95,12 +94,7 @@ mat-icon {
     color: #0000FF;
 }
 
-p,
-span,
-h2 ,a{
-    font-size: 16px;
-    font-style: italic;
-}
+
 
 img {
     width: 100%;
@@ -135,7 +129,6 @@ p {
 
 h2 {
     color: white;
-    font-size: 24px;
 }
 
 .sliding-card {
@@ -145,13 +138,11 @@ h2 {
 }
 
 .content {
-    font-size: 15px;
     padding: 33px;
   
   }
 
   .content {
-    font-size: 15px;
     padding: 33px;
   
   }
@@ -166,7 +157,6 @@ h2 {
   
   .inner-content {
     padding-left: 36px;
-    font-size: 16px;
   }
   
   .inner-func{
@@ -188,13 +178,10 @@ h2 {
   
   }
   
-  .func {
+  .function-container {
     color: orange;
     margin-top: 33px;
-    font-weight: bold;
     letter-spacing: 1px;
-    font-style: italic;
-    font-size: 23px;
   }
   
   .description-content {
@@ -234,12 +221,10 @@ h2 {
   }
   h2 {
     color: white;
-    font-size: 24px;
   }
   
   .main-content {
-    font-size: 1.2rem;
-    font-style: italic;
+    
     line-height: 33px;
   }
   
@@ -250,7 +235,7 @@ h2 {
   }
   
   .values::after{
-    content: ' " ;';
+    content: '";';
     position: relative;
     margin-right: 10px;
     left: 2px;
@@ -295,13 +280,13 @@ h2 {
   }
 
   .functionality p::before{
-    content: ' "';
+    content: '"';
     position: relative;
     right: 2px;
   }
   
   .functionality p::after{
-    content: ' " ,';
+    content: '";';
     position: relative;
     margin-right: 10px;
     left: 2px;
@@ -332,7 +317,6 @@ h2 {
     box-shadow: 0 2px 10px 2px #1b191959;
     white-space: nowrap;
     list-style: none;
-    font-size: 16px;
 }
 
 .data-scroller{
@@ -377,25 +361,24 @@ h2 {
 }
 
 a{
-    color: lightblue;
-    font-size: 20px;
+    color: #3882d6;
 }
 
 .linkContainer::before{
-    content: ' "';
+    content: '"';
     position: relative;
     right: 2px;
-    color: lightblue;
+    color: #3882d6;
     font-weight: bold;
 
   }
   
 .linkContainer::after{
-    content: ' " ;';
+  content: '";';
     position: relative;
     margin-right: 10px;
     left: 2px;
-    color: lightblue;
+    color: #3882d6;
     font-weight: bold;
 
   }

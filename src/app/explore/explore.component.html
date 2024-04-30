@@ -1,14 +1,17 @@
 <div class="sidenav-container">
-    <div class="first-row">
-        <button class="btn-container">
-            <mat-icon>file_download</mat-icon>&nbsp;Download Resume
-        </button>
+    <div class="about-container">
+        <div class="image-container">
+            <img src="../../assets/images/about.png">
+        </div>
+        <div class="first-row">
+            <div class="name-container">
+                <div class="footer"><h2>Apoorva C E</h2><h4>Software Engineer</h4></div>
+            </div>
+            <button class="btn-container">
+                <mat-icon>file_download</mat-icon>&nbsp;Download Resume
+            </button>
+        </div>
     </div>
-    <h5>Profile Picture</h5>
-    <div class="image-container">
-        <img src="../../assets/images/about.png">
-    </div>
-    <h5>Navigation</h5>
     <div class="navigation-row" *ngFor="let element of cardObjects;let i=index">
         <div class="category-container" [ngClass]="{ 'selected': selectedElement === element.name }" (click)="setResolution(element.name)">
             <div class="icon">
@@ -51,10 +54,10 @@
             </div>
         </div>
     </div>
-    <div class="footer-panel">
+    <!-- <div class="footer-panel">
         <div class="name-container">
             <span class="border-container">AP</span><div class="footer"><h2>Apoorva C E</h2><h4>Software Engineer</h4></div>
         </div>
-    </div>
+    </div> -->
 </div>
 <!-- <a href="mailto:apoorvace00@gmail.com"></a> -->

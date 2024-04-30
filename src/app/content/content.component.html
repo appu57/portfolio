@@ -3,15 +3,19 @@
         (touchend)="onTouchEnd($event, i)">
         <div class="card-header">
             <div class="name-container">
-                <span class="border-container">AP</span>
-                <h2>{{category.name}}</h2>
+                <div>
+                    <span class="border-container">AP</span>
+                </div>
+                <div>
+                    <h2>{{category.name}}</h2>
+                </div>
             </div>
             <!-- <h2><mat-icon class="profile-icon">{{category.icon}}</mat-icon> &nbsp;<span class="categoryname">{{category.name }}<mat-icon>verified</mat-icon></span></h2> -->
         </div>
         <div class="card-body">
             <div class="content-container">
                 <img src="../../assets/images/chatgpt-icon.svg">
-                <h4> {{category.description}}</h4>
+                <p> {{category.description}}</p>
             </div>
             <br>
             <div class="sliding-cards">
@@ -51,7 +55,7 @@
                                             </p>
                                             <p class="card-content">
                                                 <span
-                                                    class="variables">skills</span>&nbsp;<span>:</span>&nbsp;<span
+                                                    class="variables">technical_skills</span>&nbsp;<span>:</span>&nbsp;<span
                                                     class="datatype">string</span>&nbsp;
                                                 &nbsp;<span class="values  main-content"> Angular , JavaScript, Java , SpringBoot , NodeJS , ExpressJS , MongoDB , SQL , Typescript , Postgres , HTML & CSS , WebSocket , SocketIO, React , SpringBatch </span>&nbsp;
                                             </p>
@@ -61,7 +65,7 @@
                                                 &nbsp;<span class="values  main-content">20+</span>&nbsp;
                                             </p>
                                             <p class="card-content">
-                                                <span class="variables">corporate_projects</span>&nbsp;<span>:</span>&nbsp;<span
+                                                <span class="variables">professional_projects</span>&nbsp;<span>:</span>&nbsp;<span
                                                     class="datatype">string</span>&nbsp;
                                                 &nbsp;<span class="values  main-content">9+ (UI , backend)</span>&nbsp;
                                             </p>
@@ -82,7 +86,7 @@
                                                     class="datatype">string</span>&nbsp;
                                                 &nbsp;<span class="values">{{item.year }}</span>&nbsp;
                                             </p>
-                                            <p class="func">setCategoryWiseDescription ( ) :void ;</p>
+                                            <p class="function-container">setCategoryWiseDescription ( ) :void ;</p>
                                         </div>
                                     </div>
                                     <p><span class="bracket">&#125;</span></p>
@@ -154,7 +158,7 @@
 
                                         <div class="description-content" *ngIf="item.tasks">
 
-                                            <p><span class="func">setCategoryWiseDescription
+                                            <p><span class="function-container">setCategoryWiseDescription
                                                     &nbsp;</span>( )<span class="funcName"></span> &nbsp;<span
                                                     class="bracket">&#123;</span></p>
                                             <div class="inside-func">
@@ -179,7 +183,7 @@
                                                 </p>
                                                 <p><span class="blue">const</span> tasks = &#123;</p>
                                                 <ul *ngFor="let task of item.tasks.description , let i=index">
-                                                    <span class="datatype">task_{{i+1}} :</span> &nbsp; <span
+                                                    <span class="task-container">task_{{i+1}} :</span> &nbsp; <span
                                                         class="values  main-content">{{task.task1}}</span>
                                                 </ul>
                                                 <p>&#125;</p>
@@ -191,7 +195,7 @@
 
                                         </div>
                                         <div class="right-content" *ngIf="category.name =='Education'">
-                                            <p><span class="func">setCategoryWiseDescription</span> ( ) &#123; </p>
+                                            <p><span class="function-container">setCategoryWiseDescription</span> ( ) &#123; </p>
                                             <div class="inside-func" *ngIf="item.description ;else notImplemented">
                                                 <p><span class="blue">let</span> achievments = <span
                                                         class="pink-display">document.getElementById </span>( '
@@ -206,13 +210,13 @@
 
                                             </div>
                                             <ng-template #notImplemented>
-                                                <p class="inside-func">Method Not Implemented('');</p>
+                                                <p class="inside-func">Method Not Implemented(" ");</p>
                                             </ng-template>
 
                                             <p><span class="bracket">&#125;</span></p>
                                         </div>
                                         <div class="right-content" *ngIf="item.images">
-                                            <p><span class="func">setCategoryWiseDescription</span> ( ) &#123; </p>
+                                            <p><span class="function-container">setCategoryWiseDescription</span> ( ) &#123; </p>
                                             <div class="inside-func">
                                                 <p><span class="blue">let</span> view_image = <span
                                                         class="pink-display">document.getElementById </span>( '
@@ -220,8 +224,8 @@
                                                     ' )
                                                     ;
                                                 </p>
-                                                <p>view_image.width='450px' ;</p>
-                                                <p>view_image.height='450px' ;</p>
+                                                <p>view_image.style.width='450px' ;</p>
+                                                <p>view_image.style.height='450px' ;</p>
 
                                             </div>
                                             <div class="single-images" *ngIf="i!=4">

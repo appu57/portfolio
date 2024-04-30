@@ -71,19 +71,19 @@ export class ExploreComponent implements OnInit {
     this.selectedElement = value;
     switch (value) {
       case 'Experience':
-        window.scrollTo(window.pageXOffset, 900);
+        window.scrollTo(window.pageXOffset, 1100);
         break;
       case 'Education':
-        window.scrollTo(window.pageXOffset, 2000);
+        window.scrollTo(window.pageXOffset, 2500);
         break;
       case 'Certification':
-        window.scrollTo(window.pageXOffset, 2940);
+        window.scrollTo(window.pageXOffset, 3380);
         break;
       case 'Skills':
-        window.scrollTo(window.pageXOffset, 4040);
+        window.scrollTo(window.pageXOffset, 4700);
         break;
       case 'Projects':
-        window.scrollTo(window.pageXOffset, 4900);
+        window.scrollTo(window.pageXOffset, 5500);
         break;
       default:
         window.scrollTo(0, 0);
