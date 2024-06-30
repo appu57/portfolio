@@ -15,6 +15,7 @@ export class ExploreComponent implements OnInit {
   @Output() closeNav = new EventEmitter();
   selectedElement: string;
   buttonclicked: boolean = false;
+  mobileView:boolean=false;
 
   constructor() { }
 
@@ -60,6 +61,18 @@ export class ExploreComponent implements OnInit {
   onTouch(event: TouchEvent) {
     this.buttonclicked = false;
   }
+
+  @HostListener('window:resize',['$event'])
+  onResize(event)
+  {
+    if(window.innerWidth < 840)
+    {
+      this.mobileView=true;
+    }
+    else{
+      this.mobileView=false;
+    }
+  } 
 
   changeIcon() {
     this.isOpen = !this.isOpen;

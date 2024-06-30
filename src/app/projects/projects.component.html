@@ -182,9 +182,12 @@
     <div class="card">
         <div class="project-card-content">
 
-            <div class=" project_button_container">
+            <div class=" project_button_container" (click)="openContactPage()">
                 <p>Click here to view the entire list of projects</p>
-                <mat-icon (click)="openContactPage()">visibility</mat-icon>
+                <div class="mat_icon_container">
+                    <mat-icon >visibility</mat-icon>
+
+                </div>
                 
             </div>
         </div>
