@@ -1,7 +1,7 @@
 export const projectList=[
     {
         title:'Real Time Code Editor for peer coding or Mock Interview',
-        techStack:'WEBRTC , NodeJS , ExpressJs , React , SocketIO',
+        techStack:'WEBRTC , NodeJS , ExpressJs , React , SocketIO', 
         image:''
     },
     {
