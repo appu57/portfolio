@@ -9,7 +9,7 @@ const arrayOfObjects = [
         percentage: 23,
         universityName:'BE in Computer Science',
         description: 'English , Kannada, Hindi' ,
-        year: 'Software Engineer , MEAN stack developer , UI developer , Backend Developer',
+        year: 'Software Engineer , MEAN/MERN stack developer',
         images: null,
         specialization: 'Dancing , Singing , Cooking ',
         tasks:null
@@ -40,13 +40,8 @@ const arrayOfObjects = [
             },
             {
               task1:'Successfully resolved 10+ legacy user-interface bugs which improved the user-experience by 20%, resulting in the early accomplishment of a lead UI developer of a PLATFORM team',
-            },
-            {
-              task1:'Assumed the position of sole junior UI developer in a team of senior developers leveraging and mentoring the web performance metrics. Part of an agile team responsible for the developement of solution for the data quality checks using scalable Next Generation platform Apache Nifi.',
-            },
-            {
-              task1:'Extensively worked with Spring Batch in developing readers which involved handling diverse CSV and ascii files.',
-            },
+            }
+            ,
             {
               task1:'Fulfilled the role of a backend developer efficiently optimizing the performance of data retrieval from various tables residing in various DB.Additionally played a key role in elevating code quality by increasing test coverage to 90%'
             },

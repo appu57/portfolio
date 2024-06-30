@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CommunicateComponent } from '../communicate/communicate.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-projects',
@@ -7,10 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private matdialog:MatDialog) { }
 
   ngOnInit(): void {
 
   }
 
+  openContactPage() {
+    const dialogRef = this.matdialog.open(CommunicateComponent, {
+        autoFocus: false,
+        backdropClass: "blur-background",
+        data: {
+            buttonText: {
+                cancel: 'Cancel'
+            }
+        },
+
+    });
+}
 }

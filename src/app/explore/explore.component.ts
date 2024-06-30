@@ -37,10 +37,10 @@ export class ExploreComponent implements OnInit {
       else if (y_axis >= 1800 && y_axis < 2900) {
         this.selectedElement = 'Education';
       }
-      else if (y_axis >= 2900 && y_axis < 3800) {
+      else if (y_axis >= 2900 && y_axis < 4400) {
         this.selectedElement = 'Certification';
       }
-      else if (y_axis >= 3800 && y_axis < 4800) {
+      else if (y_axis >= 4400 && y_axis < 5170) {
         this.selectedElement = 'Skills';
       }
       else if (y_axis >= window.screenY) {

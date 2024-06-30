@@ -170,6 +170,12 @@ mat-sidenav {
 //     z-index: 7;
 // }
 
+::ng-deep .mat-dialog-container{
+    overflow: hidden !important;
+    height: 900px !important;
+    padding: 0 !important;
+}
+
 @media (max-width:1300px) {
 
     .side-nav {

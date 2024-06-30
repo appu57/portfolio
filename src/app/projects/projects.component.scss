@@ -378,7 +378,7 @@ a{
     position: relative;
     margin-right: 10px;
     left: 2px;
-    color: #3882d6;
+    color: #3882d6 ;
     font-weight: bold;
 
   }
@@ -422,3 +422,32 @@ a{
     font-weight: bold;
 
   }
+
+  .project_button_container{
+    width: 50%;
+    height: 50px;
+    background-color: rgba(32, 33, 35, var(--tw-bg-opacity));
+    margin: 10px 0px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    p{
+      color: gray;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  
+.project-card-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+mat-icon{
+  color: white;
+  cursor: pointer;
+}
