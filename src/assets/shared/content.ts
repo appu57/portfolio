@@ -11,7 +11,7 @@ const arrayOfObjects = [
         description: 'English , Kannada, Hindi' ,
         year: 'Software Engineer , MEAN/MERN stack developer',
         images: null,
-        specialization: 'Dancing , Singing , Cooking ',
+        specialization: 'Dancing , Singing , Cooking',
         tasks:null
 
       }
