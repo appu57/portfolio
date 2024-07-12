@@ -56,6 +56,7 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 mat-icon{
@@ -152,18 +153,39 @@ mat-icon{
     }
 }
 
-.project_list_container{
-    display: flex;
-}
+
 
 .project_list_container img{
-    width: 50%;
+    width: 80%;
     height: 50%;
     border-radius: 0;
 }
 
 .project_list_container .card{
-    background-color: transparent;
-    width: 50%;
-    height: 100%;
+    background-color: #292626;
+    margin: 20px;
+
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    .card-title{
+    color: white;
+    font-weight: bold;
+    }
+
+    p{
+        color: white;
+    }
+
+    a{
+        font-style: italic;
+    }
+    span{
+        color: #db5b70;
+    }
 }

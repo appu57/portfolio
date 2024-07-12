@@ -5,7 +5,9 @@ import { projectList } from 'src/assets/shared/projectList';
 interface project{
   title:string,
   techStack:string,
-  image:string
+  image:string,
+  description:string,
+  link:string
 }
 @Component({
   selector: 'app-communicate',

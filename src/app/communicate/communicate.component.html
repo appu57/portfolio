@@ -16,14 +16,27 @@
             </div><br>
             <mat-divider></mat-divider>
             <br>
-            <div class="project_list_container" *ngFor="let item of projectLists">
-                <div class="card">
-                  <p>{{item.title}}</p>
-                  <img [src]="'assets/images/'+item.image"><br>
+            <div class="project__list">
+
+                <div class="project_list_container" *ngFor="let item of projectLists">
+                    <div class="card">
+                        <div class="card-title">
+                            <p>{{item.title}}</p>
+                        </div>
+                        <div class="card-content">
+                            <p><span> Technology used</span> : {{item.techStack}}</p>
+                            <p><span>Description</span> : {{item.description}}</p>
+                            <p> <span>Github Code </span>: <a href="{{item.link}} " target="_blank">{{item.title}}</a>
+                            </p>
+                        </div>
+
+                        <img [src]="'assets/images/'+item.image"><br>
+                    </div>
                 </div>
+               
             </div>
 
-          
+
         </div>
         <br>
 
