@@ -26,11 +26,11 @@
                         <div class="card-content">
                             <p><span> Technology used</span> : {{item.techStack}}</p>
                             <p><span>Description</span> : {{item.description}}</p>
-                            <p> <span>Github Code </span>: <a href="{{item.link}} " target="_blank">{{item.title}}</a>
+                            <p > <span>Github Code </span>: <a href="{{item.link}} " target="_blank">{{item.title}}</a>
                             </p>
                         </div>
 
-                        <img [src]="'assets/images/'+item.image"><br>
+                        <img *ngIf="item.image"[src]="'assets/images/'+item.image"><br>
                     </div>
                 </div>
                

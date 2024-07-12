@@ -4,14 +4,14 @@ export const projectList=[
     {
         title:'Real Time Code Editor for peer coding or Mock Interview',
         techStack:'WEBRTC , NodeJS , ExpressJs , React , SocketIO',
-        image:'',
+        image:'webrtc1.png',
         description:'Two different users can code and interact at a real time. It acts as a mock interview platform or peer coding platform',
         link:'https://github.com/appu57/real_time_Interview_application_webrtc'
     },
     {
         title:'Connect : Seamless platform for a video calling and chatting application',
         techStack:'WEBRTC , NodeJS , ExpressJs , React , SocketIO , MongoDB',
-        image:'',
+        image:'webConnectVideo.png',
         description:'Users can interact with one another in a real time and also have a video call with other users. Connect also allows user to edit the message',
         link:'https://github.com/appu57/webrtc_react_video_calling',
     },

@@ -33,7 +33,7 @@ const arrayOfObjects = [
         specialization: '',
         tasks:{
 
-          skills:'Angular , Spring Boot , SpringBatch ,Apache NIFI ,SQL , PostgreSQL',
+          skills:'Angular, Java , Spring Boot , SpringBatch, SQL , PostgreSQL',
           description:[
             {
               task1:'Developed a fully functional alerts UI page, which was incorporated all over the hypersense product , ensuring an effective communication of the alerts. Additionally , over a period was widely used by various clients and customers all over the SUBEX as a medium of client-server communication to indicate any discrepancy',
