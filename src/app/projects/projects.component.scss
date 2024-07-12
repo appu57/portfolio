@@ -191,25 +191,7 @@ h2 {
     color: rgb(153, 150, 150);
   }
   
-  .button-container {
-    position: relative;
-    bottom: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
   
-    .right-side {
-      position: relative;
-      left: 33px;
-    }
-  
-    .left-side {
-      position: relative;
-      right: 33px;
-    }
-  }
-
   p{
     color: white;
   }
@@ -271,19 +253,6 @@ h2 {
 
   .functionality-list-container .functionality p{
     color: rgb(10, 184, 88);
-  }
-
-  .functionality p::before{
-    content: '"';
-    position: relative;
-    right: 2px;
-  }
-  
-  .functionality p::after{
-    content: '";';
-    position: relative;
-    margin-right: 10px;
-    left: 2px;
   }
 
   
