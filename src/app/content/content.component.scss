@@ -341,3 +341,35 @@ h2 {
   }
 
 }
+
+@media (max-width:700px)
+{
+p,span{
+  font-size: 14px;
+}
+
+.content{
+    padding: 0px !important;
+    padding-top: 33px !important;
+}
+
+.category-card {
+   padding: 0px !important; 
+}
+
+.card{
+  margin: 0px ;
+}
+
+.right-content img {
+  width: 50% ;
+}
+.button-container .left-side {
+  position: relative;
+  right: 10px;
+}
+.button-container .right-side {
+  position: relative;
+  left: 12px;
+}
+}

@@ -163,7 +163,7 @@ mat-icon{
 
 .project_list_container .card{
     background-color: #292626;
-    margin: 20px;
+    margin-bottom: 20px;
 
 }
 
@@ -187,5 +187,12 @@ mat-icon{
     }
     span{
         color: #db5b70;
+    }
+}
+
+@media (max-width:700px)
+{
+    p,span{
+        font-size: 12px;
     }
 }

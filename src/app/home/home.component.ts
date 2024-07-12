@@ -23,14 +23,16 @@ export class HomeComponent implements OnInit {
     onResize(event: Event): void {
         this.updateSideNav();
     }
-
+ 
     ngOnInit() {
         this.observer.observe(['(max-width:800px)']).subscribe((response) => {
+            this.openValue=false;
             if (response.matches) {
                 this.mobileView = true;
             }
             else {
                 this.mobileView = false;
+                this.openValue=true
             }
         });
         console.log(this.mobileView);
@@ -50,7 +52,9 @@ export class HomeComponent implements OnInit {
     }
 
     updateSideNav() {
+        console.log(window.innerWidth)
         this.mobileView = window.innerWidth <= 900;
+        console.log(this.mobileView)
         if (this.mobileView) {
             this.openValue = false;
             this.modeValue = 'over';
@@ -61,15 +65,6 @@ export class HomeComponent implements OnInit {
         }
     }
 
-    rotateIcon(){
-        let icon=document.getElementById('icon');
-        if(icon.innerHTML=="arrow_back")
-        {
-            icon.innerHTML="menu";
-        }
-        else{
-            icon.innerHTML="arrow_back";
-        }
-    }
+
 
 }

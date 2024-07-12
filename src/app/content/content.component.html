@@ -218,20 +218,8 @@
                                         </div>
                                         <div class="right-content" *ngIf="item.images">
                                             <p><span class="function-container">setCategoryWiseDescription</span> ( ) &#123; </p>
-                                            <div class="inside-func">
-                                                <p><span class="blue">let</span> view_image = <span
-                                                        class="pink-display">document.getElementById </span>( '
-                                                    view_image
-                                                    ' )
-                                                    ;
-                                                </p>
-                                                <p>view_image.style.width='450px' ;</p>
-                                                <p>view_image.style.height='450px' ;</p>
-
-                                            </div>
-                                            <div class="single-images" *ngIf="i!=4">
-                                                <img [src]="'assets/images/'+item.images"><br>
-                                            </div>
+                                   
+                                      
                                             <div *ngIf="i == length-1">
                                                 <app-about></app-about>
                                             </div>
