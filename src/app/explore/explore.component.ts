@@ -110,4 +110,8 @@ export class ExploreComponent implements OnInit {
   }
 
 
+  closeMatDialog(){
+    this.closeNav.emit();
+  }
+
 }

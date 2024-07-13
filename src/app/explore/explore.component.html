@@ -1,7 +1,7 @@
 <div class="sidenav-container">
     <div class="about-container">
         <span class="icon_container" *ngIf="mobileView">
-            <mat-icon>close</mat-icon>
+            <mat-icon (click)="closeMatDialog()">close</mat-icon>
         </span>
         <div class="image-container">
             <img src="../../assets/images/about.png">
