@@ -97,10 +97,6 @@ h2 {
   transition: transform 0.3s ease-in-out;
 }
 
-.content {
-    padding: 33px;
-  
-  }
 
   .content {
     padding: 33px;
@@ -158,13 +154,6 @@ h2 {
   }
   
   
-  p{
-    color: white;
-  }
-  h2 {
-    color: white;
-  }
-  
   .main-content {
     
     line-height: 33px;
@@ -219,20 +208,6 @@ h2 {
 
   .functionality-list-container .functionality p{
     color: rgb(10, 184, 88);
-  }
-
-  
-  .sliding-cards {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    position: relative;
-  }
-  
-  .sliding-card {
-    width: 100%;
-    flex: 0 0 100%;
-    transition: transform 0.3s ease-in-out;
   }
   
 
@@ -423,5 +398,9 @@ p,span{
 .image__card-content img {
   width: 100%;
   height: 50%;
+}
+
+.project_button_container {
+  width: 100%;
 }
 }

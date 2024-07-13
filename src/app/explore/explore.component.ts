@@ -38,10 +38,10 @@ export class ExploreComponent implements OnInit {
       else if (y_axis >= 1800 && y_axis < 2900) {
         this.selectedElement = 'Education';
       }
-      else if (y_axis >= 2900 && y_axis < 4400) {
+      else if (y_axis >= 2900 && y_axis < 4200) {
         this.selectedElement = 'Certification';
       }
-      else if (y_axis >= 4400 && y_axis < 5170) {
+      else if (y_axis >= 4200 && y_axis < 5000) {
         this.selectedElement = 'Skills';
       }
       else if (y_axis >= window.screenY) {
@@ -93,10 +93,10 @@ export class ExploreComponent implements OnInit {
         window.scrollTo(window.pageXOffset, 3380);
         break;
       case 'Skills':
-        window.scrollTo(window.pageXOffset, 4700);
+        window.scrollTo(window.pageXOffset, 4500);
         break;
       case 'Projects':
-        window.scrollTo(window.pageXOffset, 5500);
+        window.scrollTo(window.pageXOffset, 5100);
         break;
       default:
         window.scrollTo(0, 0);
