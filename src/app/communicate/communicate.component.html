@@ -28,6 +28,9 @@
                             <p><span>Description</span> : {{item.description}}</p>
                             <p> <span>Github Code </span>: <a href="{{item.link}} " target="_blank">{{item.title}}</a>
                             </p>
+                            <div class="live__demo" *ngIf="item.live">
+                        <p><span>Live Demo</span>:<a href="{{item.live}} " target="_blank">{{item.title}}</a></p>
+                            </div>
                         </div>
 
                         <img *ngIf="item.image" [src]="'assets/images/'+item.image"><br>

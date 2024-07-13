@@ -28,21 +28,25 @@ export const projectList=[
         techStack:'HTML , CSS , Javascript',
         image:'TicTacToe.png',
         description:'A javascript game in which two players/with computer take turns marking the spaces in a 3x3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.',
-        link:'https://github.com/appu57/TicTacToe'
+        link:'https://github.com/appu57/TicTacToe',
+        live:'https://appu57.github.io/Tic_Tac_Toe/'
     },
     {
         title:'Connect four',
         techStack:'HTML , CSS , Javascript',
         image:'Connect.png',
         description:'A javascript game where a user has to get 4 similar coloured ball in a row to win the game.',
-        link:'https://github.com/appu57/connectFour-JS'
+        link:'https://github.com/appu57/connectFour-JS',
+        live:'https://appu57.github.io/connectFour-JS/'
     },
     {
         title:'Word Search',
         techStack:'HTML , CSS , Javascript',
         image:'WordSearch.png',
         description:'A javascript game where a user has to search the given words within the grid which refreshes itself every second.',
-        link:'https://github.com/appu57/JS-wordSearch'
+        link:'https://github.com/appu57/JS-wordSearch',
+        live:'https://appu57.github.io/JS-wordSearch/'
+
         
     },
     {
@@ -50,7 +54,7 @@ export const projectList=[
         techStack:'HTML , CSS , Javascript',
         image:'DragAndDrop.png',
         description:'A drag and drop implementation in javascript where a user can drag and drop the blocks',
-        link:'https://github.com/appu57/Drag_and_Drop'
+        link:'https://github.com/appu57/Drag_and_Drop',
 
     },
     {
@@ -58,6 +62,9 @@ export const projectList=[
         techStack:'HTML , CSS , Javascript , GSAP',
         image:'GSAP.png',
         description:'A simple website which uses GSAP, TweenMax, TweenLite, swiper for animations',
-        link:'https://github.com/appu57?tab=repositories&q=GSAP&type=&language=&sort='
+        link:'https://github.com/appu57?tab=repositories&q=GSAP&type=&language=&sort=',
+        live:'https://appu57.github.io/GSAP-scrollAnimation/'
     },
 ]
+
+

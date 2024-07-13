@@ -8,6 +8,7 @@ interface project{
   image:string,
   description:string,
   link:string
+  live?:string
 }
 @Component({
   selector: 'app-communicate',
