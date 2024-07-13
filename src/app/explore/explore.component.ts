@@ -1,4 +1,4 @@
-import { Component, EventEmitter, HostListener, OnInit, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, HostListener, OnInit, Output, ViewChild } from '@angular/core';
 import arrayOfObjects from '../../assets/shared/content';
 
 
@@ -16,6 +16,11 @@ export class ExploreComponent implements OnInit {
   selectedElement: string;
   buttonclicked: boolean = false;
   mobileView:boolean=false;
+  @ViewChild('Experience') experienceRef: ElementRef;
+  @ViewChild('Education') educationRef: ElementRef;
+  @ViewChild('Certification') certificationRef: ElementRef;
+  @ViewChild('Skills') skillsRef: ElementRef;
+  @ViewChild('Projects') projectsRef: ElementRef;
 
   constructor() { }
 
@@ -82,31 +87,38 @@ export class ExploreComponent implements OnInit {
   setResolution(value: string) {
     this.buttonclicked = true;
     this.selectedElement = value;
+    
+    let scrollPosition = 0;
+    console.log(this.experienceRef);
     switch (value) {
       case 'Experience':
-        window.scrollTo(window.pageXOffset, 1100);
+        scrollPosition =document.getElementById(value).offsetTop;
         break;
       case 'Education':
-        window.scrollTo(window.pageXOffset, 2500);
+        scrollPosition = document.getElementById(value).offsetTop;
         break;
       case 'Certification':
-        window.scrollTo(window.pageXOffset, 3380);
+        scrollPosition = document.getElementById(value).offsetTop;
         break;
       case 'Skills':
-        window.scrollTo(window.pageXOffset, 4500);
+        scrollPosition =document.getElementById(value).offsetTop;
         break;
       case 'Projects':
-        window.scrollTo(window.pageXOffset, 5100);
+        scrollPosition =document.getElementById(value).offsetTop;
         break;
       default:
-        window.scrollTo(0, 0);
+        scrollPosition = 0;
         break;
     }
+
+    window.scrollTo({
+      top: scrollPosition,
+      behavior: 'smooth'
+    });
+
     if (window.innerWidth <= 900) {
       this.closeNav.emit();
     }
-
-
   }
 
 

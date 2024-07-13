@@ -1,6 +1,6 @@
 <div *ngFor="let category of cardObjects; let i=index">
     <div class="category-card" (touchstart)="onTouchStart($event, i)" (touchmove)="onTouchMove($event, i)"
-        (touchend)="onTouchEnd($event, i)">
+        (touchend)="onTouchEnd($event, i)" [id]="category.name">
         <div class="card-header">
             <div class="name-container">
                 <div>
