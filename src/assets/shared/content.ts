@@ -43,7 +43,7 @@ const arrayOfObjects = [
             }
             ,
             {
-              task1:'Fulfilled the role of a backend developer efficiently optimizing the performance of data retrieval from various tables residing in various DB.Additionally played a key role in elevating code quality by increasing test coverage to 90%'
+              task1:'Spearheaded and crafted a Trino POC, resulting a functional development, successfully executing complex database joins between tables of two different databases as well as the same database. Achieved query execution on 1billion rows/second, significantly enhancing query performance and scalability'
             },
             
           ]
