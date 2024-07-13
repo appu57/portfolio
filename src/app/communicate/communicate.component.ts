@@ -25,16 +25,8 @@ export class CommunicateComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.contactForm=this.fb.group({
-        name:new FormControl(null,[Validators.required,Validators.minLength(2),Validators.maxLength(100)]),
-        subject:new FormControl(null,[Validators.required,Validators.minLength(2),Validators.maxLength(100)]),
-        content:new FormControl(null,[Validators.required,Validators.minLength(2),Validators.maxLength(400)])
-
-    });
   }
 
-  onSubmit(){
-    console.log(this.contactForm.value);
-  }
+
 
 }
