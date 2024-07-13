@@ -59,7 +59,6 @@ export class ContentComponent implements OnInit {
   ngOnInit(): void {
     var slidingcard = document.querySelector('.sliding-cards');
     slidingcard?.addEventListener('mouseover', () => {
-      console.log("mousing");
     });
 
   }

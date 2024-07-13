@@ -35,7 +35,6 @@ export class HomeComponent implements OnInit {
                 this.openValue=true
             }
         });
-        console.log(this.mobileView);
     }
 
     openContactPage() {
@@ -52,9 +51,7 @@ export class HomeComponent implements OnInit {
     }
 
     updateSideNav() {
-        console.log(window.innerWidth)
         this.mobileView = window.innerWidth <= 900;
-        console.log(this.mobileView)
         if (this.mobileView) {
             this.openValue = false;
             this.modeValue = 'over';
