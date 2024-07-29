@@ -70,3 +70,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   line-height: 33px;
 
 }
+
+.mat-drawer-inner-container::-webkit-scrollbar{
+  display: none;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+
+
+}
